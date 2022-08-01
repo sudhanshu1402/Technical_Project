@@ -7,11 +7,6 @@ So, to overcome this gap and to fill it we came up with the idea of this project
 ## Objective
 This project will approach automatic estimation of attendance and emotion expression of students along with the performance of students during lectures in the classroom. This approach will use real time Machine Learning algorithms and will generate a 2D data for students that uses the classroom cameras that identifies facial properties of a student. Machine learning algorithms are used to train classifiers which estimate time-varying attention levels of individual students.
 
-## Scope
-This project will approach automatic estimation of attention of students along with performance of students during lectures in the classroom. This approach will use Machine Learning algorithms and Data Mining that will generate a 2D data for students and teachers that uses the classroom cameras which identifies facial properties of a student. 
-In today’s time, there are several students who didn’t pay attention during class lectures. Teacher can’t pay attention to each student specifically in the class. So, to overcome this issue and to resolve it we came up with the idea of this project- “Student Performance Analysis and Attention in Classroom (SPAAC)”. 
-In this project, we will be taking the camera recordings of the offline classes and will be using them as our data. These recordings will help the teachers to look at what is going on in the class, who all are paying attention and who are not, they can see and analyze student performance, and lastly student attendance. These recordings will also identify the facial properties of a student.
-
 ## Dependencies
 - Opencv
 - Cmake
