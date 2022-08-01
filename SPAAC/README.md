@@ -1,9 +1,8 @@
-# Face and Emotion Recognition
-This software recognizes person's faces and their corresponding emotions from a video or webcam feed. Powered by OpenCV, Dlib, face_recognition and Deep Learning.
+# SPAAC
 
-## Demo
-![Image](https://user-images.githubusercontent.com/22372476/47372515-920f0180-d707-11e8-9ba5-d3f51020958a.gif)
-
+## Problem Definition
+In today’s time, there are several students who don’t pay attention during class lectures. Teacher can’t pay attention to each student specifically in the class. 
+So, to overcome this gap and to fill it we came up with the idea of this project - “Student Performance Analysis and Attention in Classroom (SPAAC).
 
 ## Dependencies
 - Opencv
@@ -11,43 +10,50 @@ This software recognizes person's faces and their corresponding emotions from a 
 - Dlib
 - [face_recognition](https://github.com/ageitgey/face_recognition)
 - Keras
+- CNN
+- Keras
+- TensorFlow
+- NumPy
+- Pandas
+- Imutils
+- Statistics
+- datetime
+- matplotlib
 
-Note : If you are facing issues installing dlib in your system then use google collab its comes as pre-installed.
+## Class Diagram
+![image](https://user-images.githubusercontent.com/99204211/182110385-e2b26ddf-9e9e-4f04-a973-ed6caeb8744a.png)
 
-## Usage
-<!-- - Download a `shape_predictor_68_face_landmarks.dat` file from [here](https://drive.google.com/open?id=1hyDn8eJ5yaTVkMgdKGmoFIn48zwdvIkg) and put in the folder. -->
-- `test` folder contain images or video that we will feed to the model.
-- `images` folder contain only images of person face to perform face recognition.
-- `models` contain the pre-trained model for emotion classifier.
-- `emotion.py` can to run to classify emotions of person's face.
-- `face-rec-emotion.py` can recognise faces and classify emotion at a time.
-- face_recognition library uses the FaceNet Implementation for face recognition.For more details please visit [here](https://github.com/ageitgey/face_recognition)
+## Use Case Diagram
+![image](https://user-images.githubusercontent.com/99204211/182110412-d563b2df-450b-4d3c-89a5-e1a5d1d3a573.png)
 
-`python emotion.py`
+## ER Diagram
+![image](https://user-images.githubusercontent.com/99204211/182110439-d94bbb12-431c-434c-9a48-566029faa033.png)
 
-`python face-rec-emotion.py`
+## Flowchart
+![image](https://user-images.githubusercontent.com/99204211/182110466-e0380d63-fe36-42d4-82ca-6f2e8d0d59ae.png)
 
+##  Stakeholder Analysis
+![image](https://user-images.githubusercontent.com/99204211/182110488-ddbde5b2-ecd0-4942-80b2-416117a07c30.png)
 
-## To train new models for emotion classification
+## Requirement Analysis
+- Teaching students offline is going to be difficult and tough after COVID-19. Students have become very comfortable with online education. 
+- Almost 95% of students are going to face difficulties studying offline after a long period of online education. 
+- Common problems that students are going to face is not giving proper attention, distraction in class, using phones and drowsiness. 
+- So, basically our software will be used by colleges, schools and universities.
+- User would want to use our software to 
+    Monitor each student individually.
+    Analyze the attention of every student.
+    Easy attendance.
+- Important aspects of our project:
+    High accuracy
+    Easy recognition
+    Real time monitoring
 
-- Download the fer2013.tar.gz file from [here](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
-- Move the downloaded file to the datasets directory inside this repository.
-- Untar the file:
-`tar -xzf fer2013.tar`
-- Download train_emotion_classifier.py from orriaga's repo [here](https://github.com/oarriaga/face_classification/blob/master/src/train_emotion_classifier.py)
-- Run the train_emotion_classification.py file:
-`python train_emotion_classifier.py`
-
-## Deep Learning Model
-
-The model used is from this [research paper](https://github.com/oarriaga/face_classification/blob/master/report.pdf) written by Octavio Arriaga, Paul G. Plöger, and Matias Valdenegro.
-
-![Model](https://i.imgur.com/vr9yDaF.png?1)
-
-## Credit
-
-* Computer vision powered by OpenCV.
-* Neural network scaffolding powered by Keras with Tensorflow.
-* FaceNet [Research Paper](https://arxiv.org/pdf/1503.03832.pdf)
-* Convolutional Neural Network (CNN) deep learning architecture is from this [research paper](https://github.com/oarriaga/face_classification/blob/master/report.pdf).
-* Pretrained Keras model and much of the OpenCV code provided by GitHub user [oarriaga](https://github.com/oarriaga).
+## Demo image
+![image](https://user-images.githubusercontent.com/99204211/182108110-6fb858e6-1363-4f31-99f2-1dff09598c40.png)
+![image](https://user-images.githubusercontent.com/99204211/182108125-9b03f0da-45e8-4272-827c-1b210881aefa.png)
+![image](https://user-images.githubusercontent.com/99204211/182108145-d3089841-716a-4511-9d98-42ca19b51380.png)
+![image](https://user-images.githubusercontent.com/99204211/182108159-b791f691-eeea-487b-9c9b-6152d755ad66.png)
+![image](https://user-images.githubusercontent.com/99204211/182108188-29a06ead-6818-446f-8f2e-476c7a5a9b73.png)
+![image](https://user-images.githubusercontent.com/99204211/182108215-157193ab-ce2e-4c03-8252-04a3802c362f.png)
+![image](https://user-images.githubusercontent.com/99204211/182108255-5a8d4b10-b116-4433-94d7-5de3721452cc.png)
