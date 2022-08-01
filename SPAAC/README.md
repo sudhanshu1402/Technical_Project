@@ -62,14 +62,14 @@ This project will approach automatic estimation of attendance and emotion expres
 ![image](https://user-images.githubusercontent.com/99204211/182108255-5a8d4b10-b116-4433-94d7-5de3721452cc.png)
 
 ## Refernces
-https://opencv.org/
-https://numpy.org/doc/stable/
-http://dlib.net/
-https://pypi.org/project/imutils/
-https://keras.io/
-https://pypi.org/project/face-recognition/
-https://towardsdatascience.com/top-10-python-libraries-for-data-science-cd82294ec266
-https://www.npmjs.com/package/utils
-https://docs.python.org/3/library/datetime.html
-https://pandas.pydata.org/
-https://matplotlib.org
+- https://opencv.org/
+- https://numpy.org/doc/stable/
+- http://dlib.net/
+- https://pypi.org/project/imutils/
+- https://keras.io/
+- https://pypi.org/project/face-recognition/
+- https://towardsdatascience.com/top-10-python-libraries-for-data-science-cd82294ec266
+- https://www.npmjs.com/package/utils
+- https://docs.python.org/3/library/datetime.html
+- https://pandas.pydata.org/
+- https://matplotlib.org
