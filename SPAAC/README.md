@@ -4,11 +4,19 @@
 In today’s time, there are several students who don’t pay attention during class lectures. Teacher can’t pay attention to each student specifically in the class. 
 So, to overcome this gap and to fill it we came up with the idea of this project - “Student Performance Analysis and Attention in Classroom (SPAAC).
 
+## Objective
+This project will approach automatic estimation of attendance and emotion expression of students along with the performance of students during lectures in the classroom. This approach will use real time Machine Learning algorithms and will generate a 2D data for students that uses the classroom cameras that identifies facial properties of a student. Machine learning algorithms are used to train classifiers which estimate time-varying attention levels of individual students.
+
+## Scope
+This project will approach automatic estimation of attention of students along with performance of students during lectures in the classroom. This approach will use Machine Learning algorithms and Data Mining that will generate a 2D data for students and teachers that uses the classroom cameras which identifies facial properties of a student. 
+In today’s time, there are several students who didn’t pay attention during class lectures. Teacher can’t pay attention to each student specifically in the class. So, to overcome this issue and to resolve it we came up with the idea of this project- “Student Performance Analysis and Attention in Classroom (SPAAC)”. 
+In this project, we will be taking the camera recordings of the offline classes and will be using them as our data. These recordings will help the teachers to look at what is going on in the class, who all are paying attention and who are not, they can see and analyze student performance, and lastly student attendance. These recordings will also identify the facial properties of a student.
+
 ## Dependencies
 - Opencv
 - Cmake
 - Dlib
-- [face_recognition](https://github.com/ageitgey/face_recognition)
+- face_recognition
 - Keras
 - CNN
 - Keras
@@ -57,3 +65,16 @@ So, to overcome this gap and to fill it we came up with the idea of this project
 ![image](https://user-images.githubusercontent.com/99204211/182108188-29a06ead-6818-446f-8f2e-476c7a5a9b73.png)
 ![image](https://user-images.githubusercontent.com/99204211/182108215-157193ab-ce2e-4c03-8252-04a3802c362f.png)
 ![image](https://user-images.githubusercontent.com/99204211/182108255-5a8d4b10-b116-4433-94d7-5de3721452cc.png)
+
+## Refernces
+https://opencv.org/
+https://numpy.org/doc/stable/
+http://dlib.net/
+https://pypi.org/project/imutils/
+https://keras.io/
+https://pypi.org/project/face-recognition/
+https://towardsdatascience.com/top-10-python-libraries-for-data-science-cd82294ec266
+https://www.npmjs.com/package/utils
+https://docs.python.org/3/library/datetime.html
+https://pandas.pydata.org/
+https://matplotlib.org
