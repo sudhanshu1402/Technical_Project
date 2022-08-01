@@ -52,7 +52,7 @@ This project will approach automatic estimation of attendance and emotion expres
     Easy recognition
     Real time monitoring
 
-## Demo image
+## Output
 ![image](https://user-images.githubusercontent.com/99204211/182108110-6fb858e6-1363-4f31-99f2-1dff09598c40.png)
 ![image](https://user-images.githubusercontent.com/99204211/182108125-9b03f0da-45e8-4272-827c-1b210881aefa.png)
 ![image](https://user-images.githubusercontent.com/99204211/182108145-d3089841-716a-4511-9d98-42ca19b51380.png)
