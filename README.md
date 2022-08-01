@@ -1,9 +1,10 @@
 # Technical_Project
 
 STUDENT PERFORMANCE & ATTENTION ANALYSIS IN CLASS - (SPAAC)
-A smart EYE for every Class
+
 ![image](https://user-images.githubusercontent.com/99204211/182106275-da3c39ec-2a9d-4d37-9f77-5b957f90c0de.png)
 
+~ A smart EYE for every Class
 
 SPAAC is an idea to make a real time system which can calculate student attendance along with its performance (i.e., happy, neutral, sad or angry) in the classroom with the help of classroom CCTV using facial recognition algorithms along with deep learning to achieve better results. 
 
