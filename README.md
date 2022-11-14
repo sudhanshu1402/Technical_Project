@@ -2,7 +2,7 @@
 
 STUDENT PERFORMANCE & ATTENTION ANALYSIS IN CLASS - (SPAAC)
 
-![image](https://user-images.githubusercontent.com/99204211/182106275-da3c39ec-2a9d-4d37-9f77-5b957f90c0de.png)
+![SPAAC](https://user-images.githubusercontent.com/99204211/201641545-d9920a77-b757-4cad-ac6c-c721d12b8ebb.jpg)
 
 ~ A smart EYE for every Class
 
