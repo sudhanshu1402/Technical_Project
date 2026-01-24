@@ -1,0 +1,19 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Dist
+dist/
+build/
+out/
+
+# Editors
+.vscode/
+.idea/
+*.swp
