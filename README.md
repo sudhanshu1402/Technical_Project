@@ -39,3 +39,70 @@ Face systems with artificial intelligence are dramatically changing businesses. 
 
 ---
 *Maintained by Sudhanshu Singh*
+
+
+import { Response } from 'express';
+import mongoose from 'mongoose';
+import { User, Customer, Transaction } from '../models';
+import { AuthRequest, Role } from '../types';
+
+export const addCustomer = async (req: AuthRequest, res: Response) => {
+  const { name } = req.body;
+  const retailerId = req.user?.id;
+
+  const session = await mongoose.startSession();
+  session.startTransaction();
+
+  try {
+    // 1 Point = 1 Customer
+    const retailer = await User.findOneAndUpdate(
+      { _id: retailerId, points: { $gte: 1 } },
+      { $inc: { points: -1 } },
+      { session, new: true }
+    );
+
+    if (!retailer) throw new Error("Insufficient points");
+
+    const customer = await Customer.create([{ name, retailerId }], { session });
+
+    await session.commitTransaction();
+    res.status(201).json(customer[0]);
+  } catch (error: any) {
+    await session.abortTransaction();
+    res.status(400).json({ error: error.message });
+  } finally {
+    session.endSession();
+  }
+};
+
+export const managePoints = async (req: AuthRequest, res: Response) => {
+  const { retailerId, amount, type } = req.body; // type: 'TRANSFER' | 'REVERT'
+  
+  const session = await mongoose.startSession();
+  session.startTransaction();
+
+  try {
+    const incAmount = type === 'TRANSFER' ? amount : -amount;
+
+    const updatedUser = await User.findOneAndUpdate(
+      { _id: retailerId, points: { $gte: type === 'REVERT' ? amount : 0 } },
+      { $inc: { points: incAmount } },
+      { session, new: true }
+    );
+
+    if (!updatedUser) throw new Error("Operation failed: Check retailer balance");
+
+    await Transaction.create([{
+      type, amount, adminId: req.user?.id, retailerId
+    }], { session });
+
+    await session.commitTransaction();
+    res.json({ message: "Success", balance: updatedUser.points });
+  } catch (error: any) {
+    await session.abortTransaction();
+    res.status(400).json({ error: error.message });
+  } finally {
+    session.endSession();
+  }
+};
+
