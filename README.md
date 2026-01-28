@@ -51,3 +51,32 @@ router.post('/add-customer', apiLimiter, addCustomer);
 router.post('/admin/manage-points', apiLimiter, managePoints);
 
 export default router;
+
+
+
+
+
+
+
+
+import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import pointRoutes from './routes/pointRoutes';
+
+dotenv.config();
+const app = express();
+
+app.use(express.json());
+
+// Database Connection
+mongoose.connect(process.env.MONGO_URI!)
+  .then(() => console.log('✅ MongoDB Connected'))
+  .catch(err => console.error('❌ DB Error:', err));
+
+// Routes
+app.use('/api', pointRoutes);
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🚀 Running on port ${PORT}`));
+
